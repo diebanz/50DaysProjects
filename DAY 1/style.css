@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.2%;
+    overflow: hidden;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Tahoma, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 80vw;
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 10vw;
+    height: 80vh;
+    border-radius: 5rem;
+    cursor: pointer;
+    margin: 1rem;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+h3 {
+    width: 100%;
+    padding: 3rem;
+    background-image: linear-gradient(
+        90deg,
+        #ffffff 0%,
+        #ccccccb9 50%,
+        #eeeeee67 100%
+    );
+    font-size: 2.4rem;
+    position: absolute;
+    bottom: 5rem;
+    color: #333;
+    margin: 0;
+    opacity: 0;
+}
+
+.active {
+    flex: 5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+}
+
+.img1 {
+    background-image: url("https://images.unsplash.com/photo-1619957858854-1e43dfba3c4a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80");
+}
+.img2 {
+    background-image: url("https://images.unsplash.com/photo-1608592077365-c6399182e63c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
+}
+.img3 {
+    background-image: url("https://images.unsplash.com/photo-1516298773066-c48f8e9bd92b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
+}
+.img4 {
+    background-image: url("https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
+}
+.img5 {
+    background-image: url("https://images.unsplash.com/photo-1500673922987-e212871fec22?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
+}
+
+@media only screen and (max-width: 48rem) {
+    .container {
+        width: 100vw;
+    }
+
+    .panel:nth-last-of-type(4),
+    .panel:nth-last-of-type(5) {
+        display: none;
+    }
+}
