@@ -4,10 +4,48 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+            crossorigin="anonymous"
+        />
         <link rel="stylesheet" href="style.css" />
         <title>Day 3 - Rotating Navigation</title>
     </head>
     <body>
+        <div class="container">
+            <div class="circle__container">
+                <div class="circle">
+                    <button id="close" class="btn">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <button id="open" class="btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="content">
+                <h1>Some good exercise</h1>
+                <small>Natalia Banz</small>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Accusantium amet, nam praesentium voluptate fuga laudantium
+                    alias nesciunt exercitationem vel itaque, assumenda vitae
+                    saepe accusamus? In error molestias vero ad nam labore, aut
+                    cupiditate debitis consequuntur quibusdam! Quos
+                    exercitationem quis fuga aliquid, eligendi veniam modi
+                    earum, ex, est laudantium cupiditate? Nam!
+                </p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><i class="fas fa-home">Home</i></li>
+                <li><i class="fas fa-user-alt">About</i></li>
+                <li><i class="fas fa-envelope">Contact</i></li>
+            </ul>
+        </nav>
         <script src="index.js"></script>
     </body>
 </html>
