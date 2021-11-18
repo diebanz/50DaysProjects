@@ -2,7 +2,12 @@
 
 One project every day with Brad Travery course.
 
-*** 
+---
 
 ### 1. Expanding Cards ✔️
-- Simple project with adding and removing class on click.
+
+### 2. Progress Steps ✔️
+
+### 3. Rotating Navigation✔️
+
+### 4. Hidden Search Widget✔️
