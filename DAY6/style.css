@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.2%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Tahoma, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: steelblue;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    margin: 2rem 0;
+    border-radius: 2rem;
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even) {
+    transform: translateX(-400%);
+}
+
+.box.show {
+    transform: translateX(0);
+}
