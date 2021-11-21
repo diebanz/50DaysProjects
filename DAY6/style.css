@@ -6,9 +6,11 @@
 
 html {
     font-size: 62.2%;
+    overflow-x: hidden;
 }
 
 body {
+    margin-top: 5rem;
     font-size: 1.6rem;
     font-family: Tahoma, sans-serif;
     height: 100vh;
@@ -27,12 +29,12 @@ body {
     padding: 5rem;
     margin: 2rem 0;
     border-radius: 2rem;
-    transform: translateX(400%);
+    transform: translateX(800%);
     transition: transform 0.4s ease;
 }
 
 .box:nth-of-type(even) {
-    transform: translateX(-400%);
+    transform: translateX(-800%);
 }
 
 .box.show {
