@@ -86,4 +86,37 @@ h1 {
 }
 
 .faq__toggle {
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2rem;
+	padding: 0;
+	position: absolute;
+	top: 3rem;
+	right: 3rem;
+	height: 3rem;
+	width: 3rem;
+}
+.faq__toggle:focus {
+	outline: 0;
+}
+.faq__toggle .fa-times {
+	display: none;
+}
+
+.faq.active .faq__toggle .fa-times {
+	display: block;
+	color: white;
+}
+
+.faq.active .faq__toggle .fa-chevron-down {
+	display: none;
+}
+
+.faq.active .faq__toggle {
+	background-color: #9fa4a8;
+	border-radius: 50%;
 }
