@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.2%;
+    overflow: hidden;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Tahoma, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7ebdbd;
+}
+
+.counter__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 5rem;
+}
+
+.counter {
+    font-size: 5rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 580px) {
+    body {
+        flex-direction: column;
+    }
+} ;
