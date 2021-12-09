@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.2%;
+    overflow: hidden;
+}
+
+body {
+    background-color: #6495ed;
+    background-image: linear-gradient(
+        to bottom,
+        #6495ed 0%,
+        #6495ed 50%,
+        #022157 50%
+    );
+    font-size: 1.6rem;
+    font-family: Tahoma, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    background-color: #fff;
+    padding: 2rem;
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: width 0.6s linear;
+}
+
+nav.active {
+    width: 36rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 0;
+    transition: width 0.6s linear;
+}
+
+nav.active ul {
+    width: 100%;
+}
+
+nav ul li {
+    transform: rotateY(0deg);
+    opacity: 0;
+    transition: transform 0.5s linear, opacity 0.6s linear;
+}
+
+nav.active ul li {
+    opacity: 1;
+    transform: rotateY(360deg);
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    margin: 0 1rem;
+    font-weight: 700;
+}
+.icon {
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+    position: relative;
+    height: 3rem;
+    width: 3rem;
+}
+
+.icon:focus {
+    outline: 0;
+}
+
+.icon .line {
+    width: 2.3rem;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    top: 1rem;
+    left: 5px;
+    transition: transform 0.6s linear;
+}
+
+.icon .line2 {
+    top: auto;
+    bottom: 1rem;
+}
+
+nav.active .icon .line1 {
+    transform: rotate(-765deg) translateY(5.5px);
+}
+
+nav.active .icon .line2 {
+    transform: rotate(765deg) translateY(-5.5px);
+}
