@@ -45,7 +45,7 @@ main {
 }
 .movie {
     width: 30rem;
-    margin: 1rem;
+    margin: 5px;
     background-color: var(--secondary__color);
     box-shadow: 0 0.5rem 0.5rem 5px rgba(0, 0, 0, 0.2);
     position: relative;
